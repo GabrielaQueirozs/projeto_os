@@ -13,8 +13,105 @@
 </head>
 <body>
     <div class="container">
-        <h1>OS</h1>
+        <h1></h1>
     </div>
+
+
+
+    <div class="container">
+        <form id="frmClient" class="mt-2 row g-3">
+            <!-- Buscar cliente -->
+           <!--Nome do cliente-->
+            <div class="col-md-4">
+                <label for="inputNomeClient" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" id="inputNomeClient" spellcheck="false" maxlength="15">
+            </div>
+                <!-- CPF do cliente-->
+            <div class="col-md-4">
+                <label for="inputClienteClient" class="form-label">CPF do Cliente</label>
+                <input type="text" class="form-control" id="inputClienteClient" spellcheck="false" maxlength="15">
+            </div>
+         <!-- Linha -->
+         <hr class="mt-1 border border-transparent border -1">
+            <div class="col-md-1">
+                <button type="button" class="btn btn-primary" id="btnRead" onclick="searchClient()">Buscar</button>
+                  <!-- Linha -->
+         <hr class="mt-1 border border-transparent border -1">
+            </div>
+        </div>
+           
+
+            <!-- Marca -->
+            <div class="col-md-2">
+                <label for="inputMarcaClient" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="inputMarcaClient" spellcheck="false" required maxlength="10">
+            </div>
+
+            <!-- Modelo -->
+            <div class="col-md-2">
+                <label for="inputModeloClient" class="form-label">Modelo</label>
+                <input type="text" class="form-control" id="inputModeloClient" spellcheck="false" maxlength="10">
+            </div>
+
+            <!-- Ano de fabricação -->
+            <div class="col-md-2">
+                <label for="inputAnodefabricaçãoClient" class="form-label">Ano de fabricação</label>
+                <input type="text" class="form-control" id="inputAnodefabriçãolClient" spellcheck="false" maxlength="8">
+            </div>
+
+            <!-- Ano do modelo -->
+            <div class="col-md-2">
+                <label for="inputAnodomodeloClient" class="form-label">Ano do Modelo</label>
+                <input type="text" class="form-control" id="inputAnodomodeloClient" spellcheck="false" maxlength="6"
+                    required>
+            </div>
+
+          
+
+            <!-- Placa-->
+            <div class="col-md-2">
+                <label for="inputPlacaClient" class="form-label">Placa</label>
+                <input type="text" class="form-control" id="inputPlacaClient" spellcheck="false" maxlength="7"
+                    required>
+            </div>
+
+
+            
+            <!-- Cor do veiculo-->
+            <div class="col-md-3">
+                <label for="inputCordoveiculoClient" class="form-label">Cor do veículo</label>
+                <input type="text" class="form-control" id="inputCordoveiculoClient" spellcheck="false" maxlength="10">
+            </div>
+
+            <!-- Botões -->
+            <div class="mt-3">
+                <button type="submit" class="btn btn-success" id="btnCreate">Adicionar</button>
+                <button type="submit" class="btn btn-warning" id="btnUpdate">Editar</button>
+                <button type="button" class="btn btn-danger" id="btnDelete">Excluir</button>
+              
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="../public/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      <!-- Bootstrap -->
      <script src="../public/js/bootstrap.min.js"></script>

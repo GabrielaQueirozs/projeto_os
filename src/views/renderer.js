@@ -14,9 +14,4 @@ function os(){
   //  console.log("Teste botão os")
   api.osWindow()
 }
-function funilaria(){
-  api.funilariaWindow()
-}
-function pintura(){
-  api.pinturaWindow()
-}
+
