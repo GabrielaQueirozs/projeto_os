@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,88 +10,92 @@
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="../public/css/style.css">
     <!-- impedir a execução de scripts externos ou não autorizados -->
-     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
 </head>
+
 <body>
     <div class="container">
-        <h1></h1>
-    </div>
+        <form class="mt-2 row g-3">
 
-
-
-    <div class="container">
-        <form id="frmClient" class="mt-2 row g-3">
-            <!-- Buscar cliente -->
-           <!--Nome do cliente-->
+            <!-- OS -->
             <div class="col-md-4">
-                <label for="inputNomeClient" class="form-label">Nome do Cliente</label>
-                <input type="text" class="form-control" id="inputNomeClient" spellcheck="false" maxlength="15">
-            </div>
-                <!-- CPF do cliente-->
-            <div class="col-md-4">
-                <label for="inputClienteClient" class="form-label">CPF do Cliente</label>
-                <input type="text" class="form-control" id="inputClienteClient" spellcheck="false" maxlength="15">
-            </div>
-         <!-- Linha -->
-         <hr class="mt-1 border border-transparent border -1">
-            <div class="col-md-1">
-                <button type="button" class="btn btn-primary" id="btnRead" onclick="searchClient()">Buscar</button>
-                  <!-- Linha -->
-         <hr class="mt-1 border border-transparent border -1">
-            </div>
-        </div>
-           
-
-            <!-- Marca -->
-            <div class="col-md-2">
-                <label for="inputMarcaClient" class="form-label">Marca</label>
-                <input type="text" class="form-control" id="inputMarcaClient" spellcheck="false" required maxlength="10">
+                <label class="form-label">Nº OS</label>
+                <input type="text" class="form-control" id="txtOs" required>
             </div>
 
-            <!-- Modelo -->
-            <div class="col-md-2">
-                <label for="inputModeloClient" class="form-label">Modelo</label>
-                <input type="text" class="form-control" id="inputModeloClient" spellcheck="false" maxlength="10">
-            </div>
-
-            <!-- Ano de fabricação -->
-            <div class="col-md-2">
-                <label for="inputAnodefabricaçãoClient" class="form-label">Ano de fabricação</label>
-                <input type="text" class="form-control" id="inputAnodefabriçãolClient" spellcheck="false" maxlength="8">
-            </div>
-
-            <!-- Ano do modelo -->
-            <div class="col-md-2">
-                <label for="inputAnodomodeloClient" class="form-label">Ano do Modelo</label>
-                <input type="text" class="form-control" id="inputAnodomodeloClient" spellcheck="false" maxlength="6"
-                    required>
-            </div>
-
-          
-
-            <!-- Placa-->
-            <div class="col-md-2">
-                <label for="inputPlacaClient" class="form-label">Placa</label>
-                <input type="text" class="form-control" id="inputPlacaClient" spellcheck="false" maxlength="7"
-                    required>
-            </div>
-
-
-            
-            <!-- Cor do veiculo-->
+            <!-- Data -->
             <div class="col-md-3">
-                <label for="inputCordoveiculoClient" class="form-label">Cor do veículo</label>
-                <input type="text" class="form-control" id="inputCordoveiculoClient" spellcheck="false" maxlength="10">
+                <label class="form-label">Data</label>
+                <input type="text" class="form-control" id="txtData" required>
             </div>
 
-            <!-- Botões -->
-            <div class="mt-3">
-                <button type="submit" class="btn btn-success" id="btnCreate">Adicionar</button>
-                <button type="submit" class="btn btn-warning" id="btnUpdate">Editar</button>
-                <button type="button" class="btn btn-danger" id="btnDelete">Excluir</button>
-              
+            <!-- Buscar cliente -->
+            <div class="col-md-5">
+                <label for="inputSearchClient" class="form-label">Buscar Cliente</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inputSearchClient" spellcheck="false" required maxlength="30">
+                    <span class="input-group-text">
+                        <img src="../public/img/search.png" alt="lupa" width="20">
+                    </span>
+                </div>
             </div>
 
+            <!-- Nome -->
+            <div class="col-md-5">
+                <label for="inputNameClient" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNameClient" spellcheck="false" maxlength="30" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="col-md-3">
+                <label for="inputPhoneClient" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="inputPhoneClient" spellcheck="false" maxlength="15"
+                    required>
+            </div>
+
+            <!-- CPF -->
+            <div class="col-md-4">
+                <label for="inputCPFClient" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="inputCPFClient" spellcheck="false" maxlength="15" required>
+            </div>
+            <h2>Seleção de serviço</h2>
+            <!-- Linha -->
+            <hr class="mt-4 border border-secondary border -1">
+
+            <!-- Status -->
+            <div class="col-md-4">
+                <label class="form-label">Tipo de Serviço</label>
+                <select class="form-select" id="osStatus">
+                    <option value="">Selecione</option>
+                    <option>Funilaria</option>
+                    <option>Pintura</option>
+                    
+                </select>
+            </div>
+              <!-- Modelo do carro -->
+              <div class="col-md-6">
+                <label for="inputEndereçoClient" class="form-label">Modelo do carro</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="15"
+                    required>
+            </div>
+              <!-- Placa -->
+              <div class="col-md-2">
+                <label for="inputEndereçoClient" class="form-label">Placa do carro</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="7"
+                    required>
+            </div>
+      
+
+       
+
+    
+          
+            <div class="d-flex justify-content-center gap-1">
+                <button type="button" class="btn btn-success">Gerar OS</button>
+                <button type="button" class="btn btn-primary">Buscar OS</button>
+                <button type="button" class="btn btn-warning">Editar OS</button>
+                <button type="button" class="btn btn-danger">Excluir OS</button>
+                <button type="button" class="btn btn-secondary">Imprimir OS</button>
         </form>
     </div>
 
@@ -111,11 +116,3 @@
 
 
 
-
-
-     <!-- Bootstrap -->
-     <script src="../public/js/bootstrap.min.js"></script>
-     <!-- Scripts -->
-     <script src="../public/js/script.js"></script>
-</body>
-</html>

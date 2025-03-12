@@ -17,11 +17,11 @@
     <div class="container">
         <form id="frmClient" class="mt-2 row g-3">
             <!-- Buscar cliente -->
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <input type="text" class="form-control" id="searchClient" maxlength="30" spellcheck="false">
          <!-- Linha -->
-         <hr class="mt-4 border border-transparent border -1">
-            <div class="col-md-4">
+         <hr class="mt-2 border border-transparent border -1">
+            <div class="col-md-2">
                 <button type="button" class="btn btn-primary" id="btnRead" onclick="searchClient()">Buscar </button>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <!-- Email -->
             <div class="col-md-6">
                 <label for="inputEmailClient" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="inputEmailClient" spellcheck="false" maxlength="30">
+                <input type="email" class="form-control" id="inputEmailClient" spellcheck="false" maxlength="25">
             </div>
 
             <!-- Telefone -->
@@ -54,17 +54,87 @@
 
           
 
-            <!-- Endereço -->
+            <!-- Logradouro -->
             <div class="col-md-6">
-                <label for="inputEndereçoClient" class="form-label">Endereço</label>
+                <label for="inputEndereçoClient" class="form-label">Logradouro</label>
                 <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="30"
                     required>
             </div>
 
+            
+           <!-- CEP -->
+           <div class="col-md-2">
+            <label for="inputCEPClient" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="inputCEPClient" spellcheck="false" maxlength="9" required onblur="buscarCEP()">
+        </div>
+
+
+            <!-- Número -->
+            <div class="col-md-2">
+                <label for="inputEndereçoClient" class="form-label">Número</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="5"
+                    required>
+            </div>
+            <!-- Bairro -->
+            <div class="col-md-3"  required>
+            </divlass="col-md-5">
+                <label for="inputEndereçoClient" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="15"
+                    required>
+            </div>
+            <!-- Complemento -->
+            <div class="col-md-4">
+                <label for="inputEndereçoClient" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="10"
+                    required>
+            </div>
+            <!-- Cidade -->
+            <div class="col-md-6">
+                <label for="inputEndereçoClient" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="22"
+                    required>
+            </div>
+             <!-- UF -->
+             <div class="col-md-3">
+                <label for="inputUFClient" class="form-label">UF</label>
+                <select class="form-select" id="inputUFClient" name="UF" required>
+                    <option value=""></option>
+                    <option value="AC">AC - Acre</option>
+                    <option value="AL">AL - Alagoas</option>
+                    <option value="AP">AP - Amapá</option>
+                    <option value="AM">AM - Amazonas</option>
+                    <option value="BA">BA - Bahia</option>
+                    <option value="CE">CE - Ceará</option>
+                    <option value="DF">DF - Distrito Federal</option>
+                    <option value="ES">ES - Espírito Santo</option>
+                    <option value="GO">GO - Goiás</option>
+                    <option value="MA">MA - Maranhão</option>
+                    <option value="MT">MT - Mato Grosso</option>
+                    <option value="MS">MS - Mato Grosso do Sul</option>
+                    <option value="MG">MG - Minas Gerais</option>
+                    <option value="PA">PA - Pará</option>
+                    <option value="PB">PB - Paraíba</option>
+                    <option value="PR">PR - Paraná</option>
+                    <option value="PE">PE - Pernambuco</option>
+                    <option value="PI">PI - Piauí</option>
+                    <option value="RJ">RJ - Rio de Janeiro</option>
+                    <option value="RN">RN - Rio Grande do Norte</option>
+                    <option value="RS">RS - Rio Grande do Sul</option>
+                    <option value="RO">RO - Rondônia</option>
+                    <option value="RR">RR - Roraima</option>
+                    <option value="SC">SC - Santa Catarina</option>
+                    <option value="SP">SP - São Paulo</option>
+                    <option value="SE">SE - Sergipe</option>
+                    <option value="TO">TO - Tocantins</option>
+                </select>
+            </div>
+
+
+
 
 
             <!-- Botões -->
-            <div class="mt-5">
+            <div class="mt-2">
                 <button type="submit" class="btn btn-success" id="btnCreate">Adicionar</button>
                 <button type="submit" class="btn btn-warning" id="btnUpdate">Editar</button>
                 <button type="button" class="btn btn-danger" id="btnDelete">Excluir</button>
