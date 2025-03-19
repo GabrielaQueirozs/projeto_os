@@ -1,0 +1,11 @@
+tela: sobre
+tela principal tirar rolagem
+tela cliente: busca automatica do cep / colocar antes de logradouro
+botão limpar
+espaçamentos botoes
+colocar "selecionador de serviços " 
+descrições de serviços
+peças 
+valores
+funcionario
+pesquisar uma OS verdadeira
