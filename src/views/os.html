@@ -57,6 +57,7 @@
             <div class="col-md-4">
                 <label for="inputCPFClient" class="form-label">CPF</label>
                 <input type="text" class="form-control" id="inputCPFClient" spellcheck="false" maxlength="15" required>
+                <img src="" alt="">
             </div>
             <h2>Seleção de serviço</h2>
             <!-- Linha -->
@@ -69,22 +70,27 @@
                     <option value="">Selecione</option>
                     <option>Funilaria</option>
                     <option>Pintura</option>
+                    <option>Funilaria e Pintura</option>
+
+
                     
                 </select>
             </div>
-              <!-- Modelo do carro -->
-              <div class="col-md-6">
-                <label for="inputEndereçoClient" class="form-label">Modelo do carro</label>
-                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="15"
+              <!-- Dados do veiculo -->
+              <div class="col-md-10">
+                <label for="inputEndereçoClient" class="form-label">Dados do veículo: Marca,Modelo,Ano etc</label>
+                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="50"
                     required>
             </div>
-              <!-- Placa -->
-              <div class="col-md-2">
-                <label for="inputEndereçoClient" class="form-label">Placa do carro</label>
-                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="7"
-                    required>
-            </div>
-      
+                <!-- Descrição de serviço -->
+                <div class="col-md-10">
+                    <label for="inputEndereçoClient" class="form-label">Descrição de Serviços </label>
+                    <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="500"
+                        required>
+                </div>
+                
+            
+          
 
        
 

@@ -1,8 +1,8 @@
-tela: sobre
-tela principal tirar rolagem
+tela: sobre -- OK
+tela principal tirar rolagem -- OK
 tela cliente: busca automatica do cep / colocar antes de logradouro
-botão limpar
-espaçamentos botoes
+botão limpar --OK
+espaçamentos botoes --OK
 colocar "selecionador de serviços " 
 descrições de serviços
 peças 

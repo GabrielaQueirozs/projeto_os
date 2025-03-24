@@ -52,7 +52,12 @@
                     required>
             </div>
 
-          
+          <!-- CEP -->
+          <div class="col-md-2">
+            <label for="inputCEPClient" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="inputCEPClient" spellcheck="false" maxlength="9" required onblur="buscarCEP()">
+        </div>
+
 
             <!-- Logradouro -->
             <div class="col-md-6">
@@ -62,12 +67,7 @@
             </div>
 
             
-           <!-- CEP -->
-           <div class="col-md-2">
-            <label for="inputCEPClient" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="inputCEPClient" spellcheck="false" maxlength="9" required onblur="buscarCEP()">
-        </div>
-
+           
 
             <!-- Número -->
             <div class="col-md-2">
@@ -134,10 +134,12 @@
 
 
             <!-- Botões -->
-            <div class="mt-2">
+            <div class="mt-6">
                 <button type="submit" class="btn btn-success" id="btnCreate">Adicionar</button>
                 <button type="submit" class="btn btn-warning" id="btnUpdate">Editar</button>
                 <button type="button" class="btn btn-danger" id="btnDelete">Excluir</button>
+                <button type="submit" class="btn btn-success" id="btnUpdate">Resetar</button>
+
               
             </div>
 
