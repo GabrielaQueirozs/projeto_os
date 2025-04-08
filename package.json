@@ -19,5 +19,8 @@
   "homepage": "https://github.com/GabrielaQueirozs/queirozti#readme",
   "devDependencies": {
     "electron": "^34.2.0"
+  },
+  "dependencies": {
+    "moongose": "^1.0.0"
   }
 }
