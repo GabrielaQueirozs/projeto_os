@@ -73,37 +73,50 @@
                     <option>Funilaria e Pintura</option>
 
 
-                    
+          
                 </select>
             </div>
               <!-- Dados do veiculo -->
-              <div class="col-md-10">
+              <div class="col-md-8">
                 <label for="inputEndereçoClient" class="form-label">Dados do veículo: Marca,Modelo,Ano etc</label>
                 <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="50"
                     required>
             </div>
-                <!-- Descrição de serviço -->
-                <div class="col-md-10">
-                    <label for="inputEndereçoClient" class="form-label">Descrição de Serviços </label>
-                    <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="500"
+                
+                   <!-- Serviço -->
+                   <div class="col-md-4">
+                    <label for="inputEndereçoClient" class="form-label">Descrição de serviço:</label>
+                    <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="200"
                         required>
                 </div>
-                
-            
-          
+             
+                            <!-- peças -->
+                            <div class="col-md-4">
+                                <label for="inputEndereçoClient" class="form-label">Peças a serem ultilizadas:</label>
+                                <input type="text" class="form-control" id="inputEndereçoClient" spellcheck="false" maxlength="200"
+                                    required>
+                            </div>
+          <!-- Status -->
+            <div class="col-md-4">
+                <label class="form-label">OS EM:</label>
+                <select class="form-select" id="osStatus">
+                    <option value="">Selecione</option>
+                    <option>Em andamento</option>
+                    <option>Aguardando Peças</option>
+                    <option>Finalizada</option>
 
-       
+</select>
+            </div>
+        <div class="d-flex justify-content-center gap-1">
+            <button type="button" class="btn btn-success">Gerar OS</button>
+            <button type="button" class="btn btn-primary">Buscar OS</button>
+            <button type="button" class="btn btn-warning">Editar OS</button>
+            <button type="button" class="btn btn-danger">Excluir OS</button>
+            <button type="button" class="btn btn-secondary">Imprimir OS</button>
+    </form>
+</div>
+    </body>
 
-    
-          
-            <div class="d-flex justify-content-center gap-1">
-                <button type="button" class="btn btn-success">Gerar OS</button>
-                <button type="button" class="btn btn-primary">Buscar OS</button>
-                <button type="button" class="btn btn-warning">Editar OS</button>
-                <button type="button" class="btn btn-danger">Excluir OS</button>
-                <button type="button" class="btn btn-secondary">Imprimir OS</button>
-        </form>
-    </div>
 
     <!-- Bootstrap -->
     <script src="../public/js/bootstrap.min.js"></script>

@@ -6,6 +6,22 @@ const { app, BrowserWindow, nativeTheme, Menu, ipcMain } = require('electron')
 // esta linha esta relacionada ao preload.js
 const path = require('node:path')
 
+///////////////////////////////////////////
+
+// Importação dos modulos de conectar e desconectar (modulo de conexão)
+//const {conectar, desconecatar} = require('./database.js')
+
+
+    //Importação do Schema clientes da chamada model
+   // const clientModel = require ('/src/models/cliente.js')
+   // const {title} = require ('node:process')
+   // const {jspdf, default: jsPDF} = require('jspdf')
+    
+    //importação da biblioteca fs (nativa js) p manipulção de arquivos (no caso, uso dp pdf)
+    
+   // const fs = require('fs')
+
+///////////////////////////////////////////////////////////////////////////
 // Janela principal
 let win
 const createWindow = () => {

@@ -14,3 +14,7 @@ contextBridge.exposeInMainWorld('api',{
     osWindow: () => ipcRenderer.send('os-window')
 }
 )
+
+function dbStatus(message){
+    ipcRenderer.on('db-status', message)
+}
