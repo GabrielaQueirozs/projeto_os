@@ -102,8 +102,13 @@ function osWindow() {
     const main = BrowserWindow.getFocusedWindow()
     if(main) {
         os = new BrowserWindow({
+<<<<<<< HEAD
+            width: 900,
+            height: 900,
+=======
             width: 850,
             height: 850,
+>>>>>>> ea2f6834c28627e5e127ca33bff26746949cd3be
            // autoHideMenuBar: true,
             resizable: false,
             parent: main,
